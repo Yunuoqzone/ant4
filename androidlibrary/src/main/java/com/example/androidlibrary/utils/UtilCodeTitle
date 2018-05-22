@@ -1,0 +1,38 @@
+     Activity 相关 ->       ActivityUtils.java -> Demo
+     App 相关 ->            AppUtils.java -> Demo
+     栏相关 ->               BarUtils.java -> Demo
+     缓存相关 ->             CacheUtils.java -> Test
+     清除相关 ->             CleanUtils.java -> Demo
+     关闭相关 ->             CloseUtils.java
+     转换相关 ->             ConvertUtils.java -> Test
+     崩溃相关 ->             CrashUtils.java
+     设备相关 ->             DeviceUtils.java -> Demo
+     编码解码相关 ->          EncodeUtils.java -> Test
+     加密解密相关 ->          EncryptUtils.java -> Test
+     文件相关 ->              FileIOUtils.java -> Test
+     文件相关 ->              FileUtils.java -> Test
+     Fragment 相关 ->        FragmentUtils.java -> Demo
+     图片相关 ->              ImageUtils.java -> Demo
+     意图相关 ->              IntentUtils.java
+     键盘相关 ->              KeyboardUtils.java -> Demo
+     日志相关 ->              LogUtils.java -> Demo
+     网络相关 ->              NetworkUtils.java -> Demo
+     对象相关 ->              ObjectUtils.java -> Test
+     手机相关 ->              PhoneUtils.java -> Demo
+     进程相关 ->              ProcessUtils.java -> Demo
+     反射相关 ->              ReflectUtils.java -> Test
+     正则相关 ->              RegexUtils.java -> Test
+     资源相关 ->              ResourceUtils.java -> Demo
+     屏幕相关 ->              ScreenUtils.java -> Demo
+     SD 卡相关 ->             SDCardUtils.java -> Demo
+     服务相关 ->              ServiceUtils.java
+     Shell 相关 ->           ShellUtils.java
+     尺寸相关 ->              SizeUtils.java
+     Snackbar 相关 ->        SnackbarUtils.java -> Demo
+     SpannableString 相关 -> SpanUtils.java -> Demo
+     SP 相关 ->              SPUtils.java -> Demo
+     字符串相关 ->            StringUtils.java -> Test
+     时间相关 ->              TimeUtils.java -> Test
+     吐司相关 ->              ToastUtils.java -> Demo
+     URI 相关 ->             UriUtils.java
+     压缩相关 ->              ZipUtils.java -> Test

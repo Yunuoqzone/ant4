@@ -1,31 +1,41 @@
 package com.example.xueming_wu.ant;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 
+import com.blankj.utilcode.util.LogUtils;
 import com.example.androidlibrary.activity.BaseActivity;
+import com.example.xueming_wu.ant.rxjava_demo.BaseRxjava;
 
-import org.w3c.dom.Node;
+import java.util.List;
 
-import java.util.LinkedList;
+import io.reactivex.Observable;
+import io.reactivex.ObservableEmitter;
+import io.reactivex.ObservableOnSubscribe;
+import io.reactivex.Observer;
+import io.reactivex.Scheduler;
+import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.disposables.Disposable;
+import io.reactivex.functions.Cancellable;
+import io.reactivex.functions.Consumer;
+import io.reactivex.functions.Function;
+import io.reactivex.internal.schedulers.SchedulerWhen;
+import io.reactivex.schedulers.Schedulers;
 
 /**
- *
+ * @author ：xueming_wu @深圳理才网
+ * @version ：1.0
+ * @date ：2018/5/21 0021 14:22
+ * @desc ： 主页面
  */
+
 public class MainActivity extends BaseActivity {
-    private Manager manager=null;
-    private int m=0;
+    private int m = 0;
 
     private static final String TAG = "MainActivity";
 
     @Override
     protected void initVariables() {
-        if(manager==null){
-            manager=new Manager();
-        }
+
     }
 
     @Override
@@ -34,24 +44,15 @@ public class MainActivity extends BaseActivity {
         findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                manager.doWork();
-
-
+                BaseRxjava.getInstance().backpressure();
+                LogUtils.i("~~~~~按钮点击~~~~~~~~~~~~~~~~");
             }
         });
     }
 
     @Override
     protected void loadData() {
-
+        BaseRxjava.getInstance().backpressure();
     }
 
-    private class  Manager{
-        public Manager(){
-            
-        }
-        public void doWork(){
-            m=++m;
-        }
-    }
 }
